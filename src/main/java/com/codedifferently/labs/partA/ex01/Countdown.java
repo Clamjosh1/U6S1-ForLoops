@@ -10,14 +10,21 @@ public class Countdown {
     }
 
     public static String countUpLoop() {
-
-        return null;
+        String response = "";
+        for (int i = 0; i <= 5; i++) {
+            response += i + " ";
+        }
+        return response;
     }
 
-    public static String evenNumbers(){
-
-        return null;
+    public static String evenNumbers() {
+        String response = "";
+        for (int i = 0; i <= 20; i += 2) {
+            response += i + " ";
+        }
+        return response;
     }
+
     public static void main(String[] args) {
 
         System.out.println("Countdown to Launch: ");

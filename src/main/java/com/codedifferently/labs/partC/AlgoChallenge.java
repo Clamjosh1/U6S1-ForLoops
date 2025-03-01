@@ -13,11 +13,9 @@ public class AlgoChallenge {
     avengersAssemble(true, true) --> true
      */
 
-    public static Boolean avengersAssemble(boolean dcHero, boolean avengerHero) {
-
-        return null;
-
-    }
+     public static Boolean avengersAssemble(boolean dcHero, boolean avengerHero) {
+         return !dcHero || avengerHero;
+     }
 
     /* Problem 2
     You and your friends are out walking on the boardwalk at Atlantic City
@@ -31,8 +29,18 @@ public class AlgoChallenge {
      */
 
     public static Boolean nearValue(int n) {
-
-        return null;
+        return (Math.abs(n - 100) <= 10) || (Math.abs(n - 200) <= 10);
     }
 
+    public static void main(String[] args) {
+        System.out.println("avengersAssemble(true, false): " + avengersAssemble(true, false));
+        System.out.println("avengersAssemble(true, true): " + avengersAssemble(true, true));
+        System.out.println("avengersAssemble(false, true): " + avengersAssemble(false, true));
+        System.out.println("avengersAssemble(false, false): " + avengersAssemble(false, false));
+
+        System.out.println("nearValue(105): " + nearValue(105));
+        System.out.println("nearValue(150): " + nearValue(150));
+        System.out.println("nearValue(185): " + nearValue(185));
+        System.out.println("nearValue(195): " + nearValue(195));
+    }
 }

@@ -3,9 +3,13 @@ package com.codedifferently.labs.partB.ex03;
 public class Challenge {
     public static String challenge(){
         String response = "";
-        /**
-         * Your code goes here
-         */
+
+        String[] names = {"Kaleb", "Tariq", "Gio", "Sam", "Steph", "Michael"};
+
+        for (String name : names) {
+            response += name + "\n";
+        }
+
         return response;
     }
 
